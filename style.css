@@ -1,40 +1,65 @@
-.box{
-    display: flex;
-    flex-direction: column;
-    font-family: sans-serif;
-    justify-content: center;
-    margin: 0px;
-    width: fit-content;
-    height: fit-content;
-    text-align: center;
-    padding: 40px;
-    background-color: #ffffff;
-    
+/* Core layout */
+.box {
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 500px;
+  height: auto;
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.image {
+  background-color: rgb(245, 242, 239);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Buttons */
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+/* Media Query for mobile */
+@media (max-width: 600px) {
+  .box {
+    padding: 15px;
   }
-  .container{
-    display: flex;
-    justify-content: center;
-  }
-  .image{
-    background-color: rgb(245, 242, 239);
-    padding: 30px;
-    border-radius: 20px;
-  }
-  img {
-    max-width: 400px;
-    margin-top: 20px;
-    border-radius: 10px;
-    box-shadow: 15px 10px 30px rgba(0,0,0,10);
-  }
-  
-  .buttons {
-    margin-top: 30px;
-  }
-  
+
   button {
-    padding: 10px 20px;
-    font-size: 16px;
-    margin: 0 10px;
-    cursor: pointer;
+    width: 100%;
+    max-width: 200px;
+    font-size: 14px;
   }
-  
+}
